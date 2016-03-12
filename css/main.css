@@ -83,7 +83,7 @@ a:hover {
 }
 
 section {
-  padding: 85px 0;
+  padding: 75px 0;
 }
 
 .heading {
@@ -310,7 +310,7 @@ section {
 /*О нас*/
 #about-us {
   background-image: url(../images/eq6.jpg);
-  padding: 60px 0;
+  padding: 120px 0;
 }
 
 #about-us h2 {
@@ -481,7 +481,7 @@ section {
 
 /*Команда*/
 #team {
-  padding-top: 0;
+  padding-top: 30px;
 }
 
 .team-members {
@@ -550,6 +550,7 @@ section {
 
 #team .img-responsive {
   width: 100%;
+  border-radius: 5%;
 }
 
 .member-info h3 {
@@ -653,6 +654,7 @@ section {
   position: relative;
 }
 
+
 #responses-carousel {
   position: relative;
   z-index: 15
@@ -667,7 +669,9 @@ section {
 
 #responses-carousel .item {
   padding: 0 55px;
+  text-align: justify;
 }
+
 
 #responses-carousel .item a {
   color: #fff;

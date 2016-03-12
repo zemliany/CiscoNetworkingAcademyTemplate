@@ -29,7 +29,7 @@ jQuery(function($) {
 	});
 
 	$('.navbar-collapse ul li a').on('click', function() {  
-		$('html, body').animate({scrollTop: $(this.hash).offset().top - 5}, 1000);
+		$('html, body').animate({scrollTop: $(this.hash).offset().top - 75}, 1000);
 		return false;
 	});
 
@@ -76,20 +76,34 @@ jQuery(function($) {
 	//Countdown
 	$('#features').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
 		if (visible) {
-			$(this).find('.timer').each(function () {
+			
+			$(this).find('.timer').each (function () {
 				var $this = $(this);
 				$({ Counter: 0 }).animate({ Counter: $this.text() }, {
 					duration: 2000,
 					easing: 'swing',
 					step: function () {
 						$this.text(Math.ceil(this.Counter));
-					}
+					}          
 				});
 			});
+        
+        $(this).find('.percent').each (function () {
+				var $this = $(this);
+				$({ Counter: 0 }).animate({ Counter: $this.text() }, {
+					duration: 2500,
+					easing: 'swing',
+					step: function () {
+						$this.text(Math.ceil(this.Counter) + '%');
+					}          
+				});
+			});
+
 			$(this).unbind('inview');
 		}
 	});
 
+     
 	// Portfolio Single View
 	$('#portfolio').on('click','.folio-read-more',function(event){
 		event.preventDefault();
@@ -161,3 +175,13 @@ jQuery(function($) {
 	
 });
 
+$('#btn-sub').css( {backgroundPosition: "0 0"} ).mouseover(function(){
+    $(this).stop().animate(
+        {backgroundPosition:"(0 -250px)"}, 
+        {duration:500})
+})
+.mouseout(function(){
+    $(this).stop().animate(
+        {backgroundPosition:"(0 0)"}, 
+    {duration:500})
+})

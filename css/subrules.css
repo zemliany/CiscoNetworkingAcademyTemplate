@@ -1,25 +1,47 @@
 a,
 #home-slider .caption h1 span, 
-#twitter-carousel .item span, 
+#twitter-carousel .item span,
 #footer .footer-bottom, 
 #single-portfolio .close-folio-item:hover, 
 .single-table.featured .btn.btn-primary, 
-.contact-info ul li a:hover, 
+.contact-info ul li a:hover,  
 #footer .footer-bottom a  {
   color: #e82c17;
 }
 
-.btn.btn-primary:hover,
+.main-nav {
+background-color:rgba(0, 0, 0, 0.8);
+}
+
+.btn.btn-primary:hover, 
 .btn-submit:hover {
-  background-color: #027db3
+ background-color: #e82c17;
+ border-radius: 1em;
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+ transition: all 0.5s ease-in-out;
+ 
+}
+
+
+.btn-submit {
+  display: inline-block;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: border-radius;
+  transition-property: border-radius;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 a:hover, a:focus {
 	color: #027db3;
 }
+ 
 
-.main-nav, 
-.service-icon, 
 .progress-bar.progress-bar-primary, 
 .single-table.featured, 
 .btn.btn-primary, 
@@ -34,7 +56,7 @@ a:hover, a:focus {
 }
 
 .service-icon {
-	background-color:#27b075;
+	background-color:#e82c17;
 }
 
 .caption .btn-start:hover,
@@ -64,6 +86,10 @@ a:hover, a:focus {
 
 #pricing .container .row .col-sm-3 {
     margin-top: 10px;
+}
+
+#team .container .team-members .row .col-sm-3 {
+	margin-left: 200px;
 }
 
 #footer {
